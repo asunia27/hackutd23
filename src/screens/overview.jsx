@@ -33,7 +33,7 @@ const OverviewSC = () => {
             </div>
 
             <div className='new-btn'>
-                <Button onClick={handleBtn} className='btn-style' style={{borderRadius: '30px', fontSize: '1.5rem'}}>New Item</Button>
+                <Button onClick={handleBtn} className='btn-style' style={{borderRadius: '30px', fontSize: '1.5rem'}}>New Entry</Button>
             </div>
             
             <div style={{marginTop: '16rem'}}>
