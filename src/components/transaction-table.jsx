@@ -26,7 +26,7 @@ function ItemInfo(props) {
             </tr>
             <tr>
                 {open && (
-                    <td style={{ height: 0, padding: 0 }} colSpan={3}>  
+                    <td style={{ height: 0, padding: 0 }} colSpan={4}>  
                         <Table>
                             <thead>
                                 <tr>
