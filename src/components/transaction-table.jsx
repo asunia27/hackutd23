@@ -16,6 +16,7 @@ function ItemInfo(props) {
                 <td onClick={() => setOpen(!open)} style={{cursor: 'pointer'}}>
                     {open ? <FontAwesomeIcon icon={faAngleUp}/> : <FontAwesomeIcon icon={faAngleDown}/>}
                 </td>
+                <td></td>
                 <td>{item.id}</td>
                 <td>{item.time}</td>
                 <td>{item.numItems}</td>
@@ -55,9 +56,10 @@ function ItemInfo(props) {
 export default function TransactionTable() {
     return (
         <React.Fragment>
-            <Table>
+            <Table sx={{ '& tr > *:not(:first-child)': { textAlign: 'left' } }}>
                 <thead>
                     <tr>
+                        <th style={{width: '3rem'}} />
                         <th style={{width: '3rem'}} />
                         <th>Transaction No.</th>
                         <th>Time</th>
