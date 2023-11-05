@@ -1,20 +1,52 @@
 import React from 'react';
 import { TRANSACS } from '../test-data';
 import Table from '@mui/joy/Table';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
 
 
 function ItemInfo(props) {
-    const item = props;
+    const {item} = props;
+    const [open, setOpen] = React.useState(false);
 
     return (
         <React.Fragment>
-            <tbody>
-                <tr>
-                    <th>{item.category}</th>
-                    <th>{item.product}</th>
-                    <th>{item.quantity}</th>
-                </tr>
-            </tbody>
+            <tr>
+                <td onClick={() => setOpen(!open)} style={{cursor: 'pointer'}}>
+                    {open ? <FontAwesomeIcon icon={faAngleUp}/> : <FontAwesomeIcon icon={faAngleDown}/>}
+                </td>
+                <td>{item.id}</td>
+                <td>{item.time}</td>
+                <td>{item.numItems}</td>
+                <td>${item.price}</td>
+                <td>{item.method}</td>
+                <td>{item.notes}</td>
+            </tr>
+            <tr>
+                {open && (
+                    <td style={{ height: 0, padding: 0 }} colSpan={3}>  
+                        <Table>
+                            <thead>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Product</th>
+                                    <th>Quantity</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {item.details.map((dtl) => (
+                                    <tr>
+                                        <th>{dtl.category}</th>
+                                        <th>{dtl.product}</th>
+                                        <th>{dtl.quantity}</th>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </Table>
+                    </td>
+                )}
+            </tr> 
         </React.Fragment>
     )
 }
@@ -26,6 +58,7 @@ export default function TransactionTable() {
             <Table>
                 <thead>
                     <tr>
+                        <th style={{width: '3rem'}} />
                         <th>Transaction No.</th>
                         <th>Time</th>
                         <th># of Items</th>
@@ -36,32 +69,7 @@ export default function TransactionTable() {
                 </thead>
                 <tbody>
                     {TRANSACS.map((t) => (
-                        <React.Fragment>
-                            <tr>
-                            <td>{t.id}</td>
-                            <td>{t.time}</td>
-                            <td>{t.numItems}</td>
-                            <td>{t.price}</td>
-                            <td>{t.method}</td>
-                            <td>{t.notes}</td>
-                            </tr>
-                            <tr>
-                                <td colSpan={3}>
-                                    <Table>
-                                        <thead>
-                                            <tr>
-                                                <th>Category</th>
-                                                <th>Product</th>
-                                                <th>Quantity</th>
-                                            </tr>
-                                        </thead>
-                                        {t.details.map((dtl) => (
-                                            <ItemInfo category={dtl.category} product={dtl.product} quantity={dtl.quantity} />
-                                        ))}
-                                    </Table>
-                                </td>
-                            </tr>
-                        </React.Fragment>
+                        <ItemInfo item={t} />
                     ))}
                 </tbody>
             </Table>

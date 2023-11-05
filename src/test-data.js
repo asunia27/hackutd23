@@ -4,7 +4,7 @@ export const TRANSACS = [
         time: '12:05',
         numItems: 5,
         price: 50,
-        method: 'card',
+        method: 'Card',
         notes: '',
         details: [
             {
@@ -24,8 +24,8 @@ export const TRANSACS = [
         time: '12:34',
         numItems: 1,
         price: 5,
-        method: 'cash',
-        notes: 'my best friend',
+        method: 'Cash',
+        notes: 'kept change',
         details: [
             {
                 category: 'A4 prints',
@@ -39,7 +39,7 @@ export const TRANSACS = [
         time: '12:40',
         numItems: 3,
         price: 50,
-        method: 'card',
+        method: 'Card',
         notes: '',
         details: [
             {
@@ -64,8 +64,8 @@ export const TRANSACS = [
         time: '13:02',
         numItems: 2,
         price: 6,
-        method: 'card',
-        notes: 'simp',
+        method: 'Card',
+        notes: 'tipped +$2',
         details: [
             {
                 category: 'Die-cut stickers',

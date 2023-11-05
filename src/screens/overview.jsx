@@ -1,6 +1,7 @@
 import Button from '@mui/joy/Button';
 import TransactionTable from '../components/transaction-table';
 import { useNavigate } from 'react-router-dom';
+import './overview.css'
 
 const OverviewSC = () => {
     const navigate = useNavigate();
@@ -12,10 +13,10 @@ const OverviewSC = () => {
 
     return (
         <>
-            <div className='mb-5'>
-                <Button onClick={handleBtn}>New Item</Button>
+            <div className='cover sticky'>
+                <Button onClick={handleBtn} style={{marginTop: '10rem'}} >New Item</Button>
             </div>
-            <div>
+            <div className='mt-5'>
                 <TransactionTable/>
             </div>
         </>
