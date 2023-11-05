@@ -1,7 +1,13 @@
-import {useState} from "react";
+import Button from "@mui/joy/Button";
 import ProductCard from '../components/product-card';
 import { PRODUCTS } from '../test-data';
 import { Typography } from "@mui/joy";
+import { useNavigate } from 'react-router-dom';
+
+
+import { Sheet } from "@mui/joy";
+import {useState} from "react";
+
 
 {/*
 function createData(transactionNum, time, numItems, amount, paymentMethod, notes) {
@@ -16,9 +22,20 @@ function addRow() {
 */}
 
 const NewItemSC = () => {
+    
+    function handleBack(e) {
+        e.preventDefault()
+        navigate('/');
+    }
+
     return (
         <>
-            <Typography level="h1" sx={{py:3}}>Add Items to Order</Typography>
+           <div>
+                <Button onClick={handleBack} className='btn-style' style={{borderRadius: '30px', fontSize: '1.5rem'}}>Back</Button>
+
+                <Typography level="h1" sx={{py:3}}>Add Items to Order</Typography>
+           </div>
+            
 
             <div className="d-flex">
                 <div className="d-flex col-9">
@@ -29,11 +46,6 @@ const NewItemSC = () => {
                             </div>
                         ))}
                     </div>
-                </div>
-
-                <div className = "d-flex col-3">
-                    <Typography>meow</Typography>
-
                 </div>
             </div>
         </>
