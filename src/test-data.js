@@ -96,7 +96,7 @@ export const TRANSACS = [
     },
     {
         id: 6,
-        time: '12:05',
+        time: '13:15',
         numItems: 5,
         price: 50,
         method: 'Card',
@@ -116,7 +116,7 @@ export const TRANSACS = [
     },
     {
         id: 7,
-        time: '12:34',
+        time: '13:27',
         numItems: 1,
         price: 5,
         method: 'Cash',
@@ -131,7 +131,7 @@ export const TRANSACS = [
     },
     {
         id: 8,
-        time: '12:40',
+        time: '13:41',
         numItems: 3,
         price: 50,
         method: 'Card',
@@ -156,7 +156,7 @@ export const TRANSACS = [
     },
     {
         id: 9,
-        time: '13:02',
+        time: '13:45',
         numItems: 2,
         price: 6,
         method: 'Card',
@@ -171,7 +171,7 @@ export const TRANSACS = [
     },
     {
         id: 10,
-        time: '13:10',
+        time: '13:49',
         numItems: 2,
         price: 12,
         method: 'Venmo',
@@ -191,7 +191,7 @@ export const TRANSACS = [
     },
     {
         id: 11,
-        time: '12:05',
+        time: '13:58',
         numItems: 5,
         price: 50,
         method: 'Card',
@@ -211,7 +211,7 @@ export const TRANSACS = [
     },
     {
         id: 12,
-        time: '12:34',
+        time: '14:03',
         numItems: 1,
         price: 5,
         method: 'Cash',
@@ -226,7 +226,7 @@ export const TRANSACS = [
     },
     {
         id: 13,
-        time: '12:40',
+        time: '14:07',
         numItems: 3,
         price: 50,
         method: 'Card',
@@ -251,7 +251,7 @@ export const TRANSACS = [
     },
     {
         id: 14,
-        time: '13:02',
+        time: '14:11',
         numItems: 2,
         price: 6,
         method: 'Card',
@@ -266,7 +266,7 @@ export const TRANSACS = [
     },
     {
         id: 15,
-        time: '13:10',
+        time: '14:20',
         numItems: 2,
         price: 12,
         method: 'Venmo',
