@@ -95,3 +95,41 @@ export const TRANSACS = [
         ]
     }
 ]
+
+export const PRODUCTS = [
+    {
+        productName: "Vietnamese Steak",
+        quantity: "14",
+        imgSrc: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        productName: "Nou sticker",
+        quantity: "37",
+        imgSrc: "https://cdn.discordapp.com/emojis/878775822868152321.png"
+    },
+    {
+        productName: "Confused Bronya",
+        quantity: "20",
+        imgSrc: "https://cdn.discordapp.com/attachments/199610242852454400/946485100403642368/unknown.png?ex=655669f0&is=6543f4f0&hm=c112021df359289655d6d0557b189e0055e6414baeb0d2720708210e7853054c&"
+    },
+    {
+        productName: "Beanie Ice Cream",
+        quantity: "15",
+        imgSrc: "https://media.discordapp.net/stickers/927842368944742401.png"
+    },
+    {
+        productName: "Peeka",
+        quantity: "6",
+        imgSrc: "https://cdn.discordapp.com/emojis/1058877271420715118.png"
+    },
+    {
+        productName: "Skadi",
+        quantity: "18",
+        imgSrc: "https://cdn.discordapp.com/attachments/199610242852454400/1170700283618283570/skadi_scream.png?ex=6559fe9a&is=6547899a&hm=9a2d0ada463102da3a5e7c7a6374d4c5d57f59ae208b579dadd8948f92fe0e59&"
+    },
+    {
+        productName: "Kazuha?",
+        quantity: "8",
+        imgSrc: "https://i.imgur.com/MzWw6s1.jpeg"
+    }
+]
