@@ -93,6 +93,196 @@ export const TRANSACS = [
                 quantity: 1
             }
         ]
+    },
+    {
+        id: 6,
+        time: '12:05',
+        numItems: 5,
+        price: 50,
+        method: 'Card',
+        notes: '',
+        details: [
+            {
+                category: 'A3 prints',
+                product: 'Kazuha',
+                quantity: 2
+            },
+            {
+                category: 'Die-cut stickers',
+                product: 'Honkai',
+                quantity: 3
+            }
+        ]
+    },
+    {
+        id: 7,
+        time: '12:34',
+        numItems: 1,
+        price: 5,
+        method: 'Cash',
+        notes: 'kept change',
+        details: [
+            {
+                category: 'A4 prints',
+                product: 'Akitoya',
+                quantity: 1
+            }
+        ]
+    },
+    {
+        id: 8,
+        time: '12:40',
+        numItems: 3,
+        price: 50,
+        method: 'Card',
+        notes: '',
+        details: [
+            {
+                category: 'A3 prints',
+                product: 'Kazuha',
+                quantity: 1
+            },
+            {
+                category: 'Charms',
+                product: 'Nijisanji',
+                quantity: 1
+            },
+            {
+                category: 'Charms',
+                product: 'Original',
+                quantity: 1
+            }
+        ]
+    },
+    {
+        id: 9,
+        time: '13:02',
+        numItems: 2,
+        price: 6,
+        method: 'Card',
+        notes: '',
+        details: [
+            {
+                category: 'Die-cut stickers',
+                product: 'Honkai',
+                quantity: 2
+            }
+        ]
+    },
+    {
+        id: 10,
+        time: '13:10',
+        numItems: 2,
+        price: 12,
+        method: 'Venmo',
+        notes: '',
+        details: [
+            {
+                category: 'Charms',
+                product: 'Nijisanji',
+                quantity: 1
+            },
+            {
+                category: 'Charms',
+                product: 'Original',
+                quantity: 1
+            }
+        ]
+    },
+    {
+        id: 11,
+        time: '12:05',
+        numItems: 5,
+        price: 50,
+        method: 'Card',
+        notes: '',
+        details: [
+            {
+                category: 'A3 prints',
+                product: 'Kazuha',
+                quantity: 2
+            },
+            {
+                category: 'Die-cut stickers',
+                product: 'Honkai',
+                quantity: 3
+            }
+        ]
+    },
+    {
+        id: 12,
+        time: '12:34',
+        numItems: 1,
+        price: 5,
+        method: 'Cash',
+        notes: '',
+        details: [
+            {
+                category: 'A4 prints',
+                product: 'Akitoya',
+                quantity: 1
+            }
+        ]
+    },
+    {
+        id: 13,
+        time: '12:40',
+        numItems: 3,
+        price: 50,
+        method: 'Card',
+        notes: '',
+        details: [
+            {
+                category: 'A3 prints',
+                product: 'Kazuha',
+                quantity: 1
+            },
+            {
+                category: 'Charms',
+                product: 'Nijisanji',
+                quantity: 1
+            },
+            {
+                category: 'Charms',
+                product: 'Original',
+                quantity: 1
+            }
+        ]
+    },
+    {
+        id: 14,
+        time: '13:02',
+        numItems: 2,
+        price: 6,
+        method: 'Card',
+        notes: '',
+        details: [
+            {
+                category: 'Die-cut stickers',
+                product: 'Honkai',
+                quantity: 2
+            }
+        ]
+    },
+    {
+        id: 15,
+        time: '13:10',
+        numItems: 2,
+        price: 12,
+        method: 'Venmo',
+        notes: '',
+        details: [
+            {
+                category: 'Charms',
+                product: 'Nijisanji',
+                quantity: 1
+            },
+            {
+                category: 'Charms',
+                product: 'Original',
+                quantity: 1
+            }
+        ]
     }
 ]
 
