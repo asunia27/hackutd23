@@ -1,4 +1,5 @@
 import Button from '@mui/joy/Button';
+import TransactionTable from '../components/transaction-table';
 import { useNavigate } from 'react-router-dom';
 
 const OverviewSC = () => {
@@ -15,7 +16,7 @@ const OverviewSC = () => {
                 <Button onClick={handleBtn}>New Item</Button>
             </div>
             <div>
-                aaaaaaaaaaaaaaaa
+                <TransactionTable/>
             </div>
         </>
     )
