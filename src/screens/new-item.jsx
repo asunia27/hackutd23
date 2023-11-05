@@ -24,7 +24,8 @@ function addRow() {
 */}
 
 const NewItemSC = () => {
-    
+    const navigate = useNavigate();
+
     function handleBack(e) {
         e.preventDefault()
         navigate('/');
@@ -35,7 +36,11 @@ const NewItemSC = () => {
             <div className="sidebar sticky-side">
                 <Typography level="h1" sx={{py:3}}>Items</Typography>
                 <Divider/>
-                <Button onClick={handleBack} className='btn-style' style={{borderRadius: '30px', fontSize: '1.5rem'}}>Back</Button>
+                <div style={{height: '66%', marginBottom: '2rem'}}>
+
+                </div>
+                <Divider/>
+                <Button onClick={handleBack} className='btn-style' style={{borderRadius: '30px', fontSize: '1.5rem', marginTop: '2rem'}}>Done</Button>
 
             </div>
 
@@ -50,11 +55,6 @@ const NewItemSC = () => {
                             </div>
                         ))}
                     </div>
-                </div>
-
-                <div className = "d-flex col-3">
-                    <Typography>meow</Typography>
-
                 </div>
             </div>
             
