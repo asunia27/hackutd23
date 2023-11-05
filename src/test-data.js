@@ -288,7 +288,7 @@ export const TRANSACS = [
 
 export const PRODUCTS = [
     {
-        productName: "Ellie Attack",
+        productName: "OCs and Birds",
         quantity: "14",
         imgSrc: "https://cdn.discordapp.com/attachments/754489477161812048/1170721615483510784/ellie_attack_1.png?ex=655a1278&is=65479d78&hm=d9cb7a489992c906c5e189bf84186c0c9472acc749e6566eebb3d6c5a38e5a82&"
     },
