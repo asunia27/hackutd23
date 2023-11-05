@@ -4,6 +4,7 @@ import App from './App.jsx'
 import './index.css'
 import './scss/styles.scss'
 import * as bootstrap from 'bootstrap'
+import '@fontsource/inter';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
